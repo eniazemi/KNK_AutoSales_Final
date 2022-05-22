@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enifinal.controllers.ProfileController">
+    <MenuBar>
+        <Menu mnemonicParsing="false" text="Main">
+            <MenuItem mnemonicParsing="false" onAction="#gotoHome" text="Home">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Preferences">
+            <MenuItem mnemonicParsing="false" onAction="#gotoAllCars" text="View all cars">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoStatistics" text="Statistics">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Profile">
+            <MenuItem mnemonicParsing="false" onAction="#gotoProfile" text="View profile">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoUserEdit" text="Change password">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoSignOut" text="SignOut">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="ESCAPE" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Settings">
+            <MenuItem mnemonicParsing="false" onAction="#gotoChangeLanguage" text="Change language">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoAboutUs" text="About us">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
+                </accelerator>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
+
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <Label layoutX="80.0" layoutY="80.0" text="Name"/>
+        <Label layoutX="80.0" layoutY="110.0" text="Last Name"/>
+        <Label layoutX="80.0" layoutY="140.0" text="Username"/>
+        <Label layoutX="80.0" layoutY="170.0" text="City"/>
+        <Label layoutX="80.0" layoutY="200.0" text="Email"/>
+        <Label layoutX="80.0" layoutY="230.0" text="Gender"/>
+        <Label layoutX="80.0" layoutY="260.0" text="Birthday"/>
+<!--        <Label layoutX="80.0" layoutY="290.0" text="Admin Privileges"/>-->
+
+        <Label fx:id="user_name" layoutX="215.0" layoutY="80.0"/>
+        <Label fx:id="user_lastname" layoutX="215.0" layoutY="110.0"/>
+        <Label fx:id="user_username" layoutX="215.0" layoutY="140.0"/>
+        <Label fx:id="user_city" layoutX="215.0" layoutY="170.0"/>
+        <Label fx:id="user_email" layoutX="215.0" layoutY="200.0"/>
+        <Label fx:id="user_gender" layoutX="215.0" layoutY="230.0"/>
+        <Label fx:id="user_birthday" layoutX="215.0" layoutY="260.0"/>
+<!--        <Label fx:id="user_isAdmin" layoutX="215.0" layoutY="290.0"/>-->
+
+        <ImageView fitHeight="280.0" fitWidth="220.0" layoutX="400.0" layoutY="75.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <Image url="@../img/logo_and_stuff/user.png"/>
+        </ImageView>
+
+        <Label layoutX="238.0" layoutY="17.0" text="Welcome to you profile">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <Button layoutX="215.0" layoutY="320.0" mnemonicParsing="false" onAction="#adminAccess"
+                style="-fx-cursor: hand;" text="Admin Panel"/>
+    </AnchorPane>
+</VBox>
