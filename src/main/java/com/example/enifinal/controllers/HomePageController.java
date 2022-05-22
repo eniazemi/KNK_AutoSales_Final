@@ -12,7 +12,7 @@ public class HomePageController {
     }
 
     public void gotoAboutUs(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event,"views/profile.fxml");
+        new ChangeScene().next_page(event,"views/aboutUsPage.fxml");
 
     }
 

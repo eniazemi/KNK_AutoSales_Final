@@ -36,6 +36,6 @@ public class MenuController {
         new ChangeScene().next_page(this.root,"views/profile.fxml");
     }
     public void gotoAboutUs(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/profile.fxml");
+        new ChangeScene().next_page(this.root,"views/aboutUsPage.fxml");
     }
 }

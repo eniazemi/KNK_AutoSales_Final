@@ -15,6 +15,7 @@ public class ChangeScene {
         Parent root = FXMLLoader.load(Objects.requireNonNull(HelloApplication.class.getResource(x)));
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(new Scene(root));
+
         window.show();
     }
 
