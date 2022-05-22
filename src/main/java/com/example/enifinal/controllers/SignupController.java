@@ -17,7 +17,7 @@ import java.util.ResourceBundle;
 
 public class SignupController implements Initializable {
     @FXML
-    private TextField emri, mbiemri, username, city, email;
+    private TextField name, surname, username, city, email;
     @FXML
     private PasswordField password;
     @FXML
@@ -39,11 +39,12 @@ public class SignupController implements Initializable {
     public void create_new_user(ActionEvent event) throws SQLException, ClassNotFoundException, IOException {
         String alert_msg = null;
 
-        if (emri.getText().isEmpty() || mbiemri.getText().isEmpty() || username.getText().isEmpty() ||
-                city.getText().isEmpty() || email.getText().isEmpty() || password.getText().isEmpty()) {
+        if (name.getText().isEmpty() || surname.getText().isEmpty() || username.getText().isEmpty() ||
+                city.getText().isEmpty() || email.getText().isEmpty() || password.getText().isEmpty() ||
+                birthday.getValue() == null || toggleGroup.getSelectedToggle() == null) {
             alert_msg = "Fill all the required files";
+            alert.setText(alert_msg);
         }
-        alert.setText(alert_msg);
         if (alert_msg == null) {
             alert_msg = new Regex().check_user_email(email.getText());
             alert.setText(alert_msg);
@@ -54,8 +55,8 @@ public class SignupController implements Initializable {
         }
         if (alert_msg == null) {
             SignupProcess sp = new SignupProcess();
-            alert_msg = sp.add_user(emri.getText(),
-                    mbiemri.getText(),
+            alert_msg = sp.add_user(name.getText(),
+                    surname.getText(),
                     username.getText(),
                     city.getText(),
                     email.getText(),
@@ -71,22 +72,8 @@ public class SignupController implements Initializable {
     }
 
     @FXML
-    private void clear_button(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event, "views/loginPage.fxml");
-
-        this.emri.clear();
-        this.btn_gender.setSelected(false);
-        this.btn_gender_1.setSelected(false);
-        this.mbiemri.clear();
-        this.username.clear();
-        this.city.clear();
-        this.email.clear();
-        this.password.clear();
-        this.birthday.getEditor().clear();
-    }
-
-    @FXML
-    private void login_button(ActionEvent event) throws IOException {
+    private void cancel_button(ActionEvent event) throws IOException {
         new ChangeScene().next_page(event, "views/loginPage.fxml");
     }
+
 }

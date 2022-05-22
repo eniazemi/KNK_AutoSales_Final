@@ -34,10 +34,9 @@ public class LoginController {
 //            pass = new Encrypt().encryptionWithMD5(pass);
             LoginProcess lv = new LoginProcess();
 
-            if (lv.validate(user,pass,"users")){
+            if (lv.validate(user, pass, "users")) {
                 wrongLogIn.setText("");
                 new ChangeScene().next_page(event, "views/homePage.fxml");
-
             }
             else {
                 wrongLogIn.setText("Wrong credentials");

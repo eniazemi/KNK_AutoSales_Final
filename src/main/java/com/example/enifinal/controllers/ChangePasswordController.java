@@ -26,27 +26,32 @@ public class ChangePasswordController extends MenuController implements Initiali
     @FXML
     public Label welcomeMessage, alert;
 
+    @FXML
     public void change_password(ActionEvent event) throws SQLException, ClassNotFoundException, IOException {
+        System.out.println("sad");
         String alert_msg = null;
-        if (Objects.equals(old_password.getText(), UserModel.getPass())) {
-            if (Objects.equals(new_password.getText(), confirm_password.getText())) {
-                alert_msg = new Regex().check_user_password(new_password.getText());
-                if (alert_msg==null) {
-                    new ChangePasswordProcess(new_password.getText());
-                    new ChangeScene().next_page(event, "views/loginPage.fxml");
-                }
-            } else {
-                alert_msg = "Passwords do not match";
-            }
-
-        } else {
-            alert_msg = "Old Password is incorrect";
+        if (!Objects.equals(old_password.getText(), UserModel.getPass())) {
+            alert.setText("Old Password is incorrect");
+            return;
         }
+
+        if (!Objects.equals(new_password.getText(), confirm_password.getText())) {
+            alert.setText("Passwords do not match");
+            return;
+        }
+
+        alert_msg = new Regex().check_user_password(new_password.getText());
         alert.setText(alert_msg);
+
+        if (alert.getText() == null) {
+            new ChangePasswordProcess(new_password.getText());
+            new ChangeScene().next_page(event, "views/loginPage.fxml");
+        }
     }
 
+    @FXML
     public void cancel(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event, "views/profile.fxml");
+        new ChangeScene().next_page(event, "views/profilePage.fxml");
     }
 
     @Override

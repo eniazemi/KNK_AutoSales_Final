@@ -14,23 +14,21 @@ public class SignupProcess {
 
 
         try {
-        Statement statement = new DBConnect().getConnection().createStatement();
-        String query = "INSERT INTO users(FirstName,LastName,Username,City,Email,Pasword,Gender,Birthday,isAdmin) Values ('"
-                + name + "', '"
-                + surname + "', '"
-                + username + "','"
-                + city + "', '"
-                + email + "', '"
-                + password + "', '"
-                + gender + "', '"
-                + birthday + "', '"
-                +  (isAdmin ? 1 : 0) + "')";
-        statement.executeUpdate(query);
-        }
-        catch (SQLIntegrityConstraintViolationException e){
+            Statement statement = new DBConnect().getConnection().createStatement();
+            String query = "INSERT INTO users(FirstName,LastName,Username,City,Email,Pasword,Gender,Birthday,isAdmin) Values ('"
+                    + name + "', '"
+                    + surname + "', '"
+                    + username + "','"
+                    + city + "', '"
+                    + email + "', '"
+                    + password + "', '"
+                    + gender + "', '"
+                    + birthday + "', '"
+                    + (isAdmin ? 1 : 0) + "')";
+            statement.executeUpdate(query);
+        } catch (SQLIntegrityConstraintViolationException e) {
             return "This username is already taken";
         }
-
         return null;
     }
 }

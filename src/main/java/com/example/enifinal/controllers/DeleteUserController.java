@@ -16,7 +16,7 @@ public class DeleteUserController {
 
     public Label alert;
 
-    public void confirm_delete(ActionEvent event) throws SQLException, ClassNotFoundException, IOException {
+    public void confirm_delete(ActionEvent event){
         String delete_user_id = delete_user.getText();
         try {
             DeleteUserProcess dup = new DeleteUserProcess((Integer.parseInt(delete_user_id)));
@@ -29,6 +29,7 @@ public class DeleteUserController {
                     InformationAlert.setContentText("User DELETED Successfully");
                     dup.deleteUser();
                     InformationAlert.show();
+                    new ChangeScene().next_page(event,"views/profilePage.fxml");
 
                 } else {
                     alert.setText("You can not delete an admin.");
@@ -44,6 +45,6 @@ public class DeleteUserController {
     }
 
     public void cancel(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event, "views/profile.fxml");
+        new ChangeScene().next_page(event, "views/profilePage.fxml");
     }
 }

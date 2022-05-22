@@ -81,7 +81,7 @@ public class AllCarsProcess extends Pane {
         ex.setID(Integer.parseInt(btn.getId()));
         ex.update();
 
-        new ChangeScene().another_page("views/extendedInfo.fxml","More info");
+        new ChangeScene().another_page("views/extendedInfo.fxml");
 
     }
 }

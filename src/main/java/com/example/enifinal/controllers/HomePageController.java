@@ -8,21 +8,18 @@ import java.io.IOException;
 public class HomePageController {
 
     public void gotoProfile(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event,"views/profile.fxml");
+        new ChangeScene().next_page(event, "views/profilePage.fxml");
     }
 
     public void gotoAboutUs(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event,"views/aboutUsPage.fxml");
-
+        new ChangeScene().next_page(event, "views/aboutUsPage.fxml");
     }
 
     public void gotoStats(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event,"views/statistics.fxml");
-
+        new ChangeScene().next_page(event, "views/statisticsPage.fxml");
     }
 
     public void gotoAllCars(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(event,"views/allCars.fxml");
-
+        new ChangeScene().next_page(event, "views/allCarsPage.fxml");
     }
 }

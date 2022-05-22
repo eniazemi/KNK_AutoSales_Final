@@ -12,30 +12,34 @@ public class MenuController {
     Pane root;
 
     public void gotoHome(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/homePage.fxml");
+        new ChangeScene().next_page(this.root, "views/homePage.fxml");
     }
 
     public void gotoAllCars(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/allCars.fxml");
+        new ChangeScene().next_page(this.root, "views/allCarsPage.fxml");
     }
 
     public void gotoStatistics(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/statistics.fxml");
+        new ChangeScene().next_page(this.root, "views/statisticsPage.fxml");
     }
 
     public void gotoProfile(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/profile.fxml");
+        new ChangeScene().next_page(this.root, "views/profilePage.fxml");
     }
+
     public void gotoUserEdit(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/changePassword.fxml");
+        new ChangeScene().next_page(this.root, "views/changePassword.fxml");
     }
+
     public void gotoSignOut(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/greetingPage.fxml");
+        new ChangeScene().next_page(this.root, "views/greetingPage.fxml");
     }
+
     public void gotoChangeLanguage(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/profile.fxml");
+        new ChangeScene().next_page(this.root, "views/profilePage.fxml");
     }
+
     public void gotoAboutUs(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/aboutUsPage.fxml");
+        new ChangeScene().next_page(this.root, "views/aboutUsPage.fxml");
     }
 }

@@ -16,12 +16,9 @@ public class AllCarsController extends MenuController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            AllCarsProcess shcp = new AllCarsProcess();
-            VBox e = shcp.doMagic(carlistbox);
+            AllCarsProcess allCars = new AllCarsProcess();
+            VBox e = allCars.doMagic(carlistbox);
             test.getChildren().add(e);
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        } catch (Exception ignore) {}
     }
 }

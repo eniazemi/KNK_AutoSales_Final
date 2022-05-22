@@ -45,7 +45,7 @@
                 </font>
             </Label>
 
-            <TextField id="SignUp-Button" fx:id="emri" maxHeight="-Infinity" maxWidth="-Infinity"
+            <TextField id="SignUp-Button" fx:id="name" maxHeight="-Infinity" maxWidth="-Infinity"
                        minHeight="-Infinity" minWidth="-Infinity" prefHeight="32.0" prefWidth="223.0"
                        style="-fx-text-fill: white;" stylesheets="@zdesign.css" GridPane.columnIndex="1"
                        GridPane.rowIndex="1"/>
@@ -55,7 +55,7 @@
                     <Font size="24.0"/>
                 </font>
             </Label>
-            <TextField id="SignUp-Button" fx:id="mbiemri" maxHeight="-Infinity" maxWidth="-Infinity"
+            <TextField id="SignUp-Button" fx:id="surname" maxHeight="-Infinity" maxWidth="-Infinity"
                        minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="225.0"
                        style="-fx-text-fill: white;" stylesheets="@zdesign.css"
                        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
@@ -120,19 +120,7 @@
                         GridPane.rowIndex="8"/>
 
             <Button id="Button" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                    minWidth="-Infinity" mnemonicParsing="false" onAction="#clear_button" prefHeight="40.0"
-                    prefWidth="100.0" style="-fx-background-radius: 10; -fx-cursor: hand;"
-                    stylesheets="@zdesign.css" text="Cancel" textFill="WHITE" GridPane.columnIndex="1"
-                    GridPane.rowIndex="9">
-                <opaqueInsets>
-                    <Insets/>
-                </opaqueInsets>
-                <GridPane.margin>
-                    <Insets bottom="10.0" left="80.0" top="10.0"/>
-                </GridPane.margin>
-            </Button>
-            <Button id="Button" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
-                    minWidth="-Infinity" mnemonicParsing="false" onAction="#clear_button" prefHeight="40.0"
+                    minWidth="-Infinity" mnemonicParsing="false" onAction="#cancel_button" prefHeight="40.0"
                     prefWidth="100.0" style="-fx-background-radius: 10; -fx-cursor: hand;"
                     stylesheets="@zdesign.css" text="Cancel" textFill="WHITE" GridPane.columnIndex="1"
                     GridPane.rowIndex="9">
@@ -144,7 +132,8 @@
                 </GridPane.margin>
             </Button>
 
-            <Button id="Button" fx:id="SignUP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+
+            <Button id="Button" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
                     minWidth="-Infinity" mnemonicParsing="false" onAction="#create_new_user" prefHeight="40.0"
                     prefWidth="100.0" style="-fx-background-radius: 10; -fx-cursor: hand;"
                     stylesheets="@zdesign.css" text="SignUP" textFill="WHITE" GridPane.rowIndex="9">

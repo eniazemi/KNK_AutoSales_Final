@@ -38,7 +38,5 @@ public class ProfileController extends MenuController implements Initializable {
         user_city.setText(UserModel.getCity());
     }
 
-    public void changePassword(ActionEvent event) {
 
-    }
 }
