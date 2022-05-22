@@ -36,7 +36,7 @@ public class LoginController {
 
             if (lv.validate(user,pass,"users")){
                 wrongLogIn.setText("");
-                new ChangeScene().next_page(event, "views/allCars.fxml");
+                new ChangeScene().next_page(event, "views/homePage.fxml");
 
             }
             else {

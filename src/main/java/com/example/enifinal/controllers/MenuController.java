@@ -12,7 +12,7 @@ public class MenuController {
     Pane root;
 
     public void gotoHome(ActionEvent event) throws IOException {
-        new ChangeScene().next_page(this.root,"views/greetingPage.fxml");
+        new ChangeScene().next_page(this.root,"views/homePage.fxml");
     }
 
     public void gotoAllCars(ActionEvent event) throws IOException {
