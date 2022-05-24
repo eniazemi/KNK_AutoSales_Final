@@ -28,7 +28,7 @@
 
 #icons
 {
-    -fx-background-color: #F3F3F3;
+    -fx-background-color: #27496D;
 }
 #icons:hover {
     -fx-background-color: #C0D5F7;
@@ -83,3 +83,5 @@
     -fx-text-box-border: -fx-control-inner-background;
     -fx-border-width: -1;
 }
+
+

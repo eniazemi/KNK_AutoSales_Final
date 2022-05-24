@@ -67,7 +67,7 @@
         </Menu>
     </MenuBar>
 
-    <Label layoutX="33.0" layoutY="20.0" prefHeight="46.0" prefWidth="275.0" text="About Us" textFill="#2b3b5b">
+    <Label fx:id="text1" layoutX="33.0" layoutY="20.0" prefHeight="46.0" prefWidth="275.0" text="About Us" textFill="#2b3b5b">
         <font>
             <Font size="36.0"/>
         </font>
