@@ -32,7 +32,9 @@ public class DeleteUserController {
                     new ChangeScene().next_page(event,"views/profilePage.fxml");
 
                 } else {
-                    alert.setText("You can not delete an admin.");
+                    Alert error = new Alert(Alert.AlertType.ERROR);
+                    error.setContentText("You can not delete an admin.");
+                    error.show();
                 }
             } else {
                 alert.setText("User does not exist!");

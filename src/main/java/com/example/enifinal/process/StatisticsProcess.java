@@ -23,7 +23,6 @@ public class StatisticsProcess {
         return dataSeries1;
     }
 
-
     public ObservableList<PieChart.Data> getDataPieChart(String tableName, String groupby) throws SQLException, ClassNotFoundException {
 
         ResultSet db_data = new Queries().count_values(tableName,groupby);

@@ -19,8 +19,8 @@ public class StatisticsController extends MenuController implements Initializabl
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         try {
-            this.barChartC.getData().add(new StatisticsProcess().getDataSeriesBarChart("cars", "car_fuel"));
-            this.pieChartC.setData(new StatisticsProcess().getDataPieChart("cars", "car_year"));
+            this.barChartC.getData().add(new StatisticsProcess().getDataSeriesBarChart("cars", "car_color"));
+            this.pieChartC.setData(new StatisticsProcess().getDataPieChart("cars", "car_brand"));
 
             this.barChartU.getData().add(new StatisticsProcess().getDataSeriesBarChart("users", "City"));
             this.pieChartU.setData(new StatisticsProcess().getDataPieChart("users", "Gender"));

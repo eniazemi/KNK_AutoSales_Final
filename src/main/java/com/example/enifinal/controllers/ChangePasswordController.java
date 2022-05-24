@@ -28,7 +28,6 @@ public class ChangePasswordController extends MenuController implements Initiali
 
     @FXML
     public void change_password(ActionEvent event) throws SQLException, ClassNotFoundException, IOException {
-        System.out.println("sad");
         String alert_msg = null;
         if (!Objects.equals(old_password.getText(), UserModel.getPass())) {
             alert.setText("Old Password is incorrect");
