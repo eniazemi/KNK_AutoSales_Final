@@ -2,10 +2,11 @@ package com.example.enifinal.controllers;
 
 import com.example.enifinal.process.ChangeScene;
 import javafx.event.ActionEvent;
+import javafx.scene.control.Menu;
 
 import java.io.IOException;
 
-public class HomePageController {
+public class HomePageController extends MenuController {
 
     public void gotoProfile(ActionEvent event) throws IOException {
         new ChangeScene().next_page(event, "views/profilePage.fxml");

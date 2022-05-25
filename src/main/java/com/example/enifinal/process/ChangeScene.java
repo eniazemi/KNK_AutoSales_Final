@@ -9,12 +9,16 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.util.Objects;
+import java.util.ResourceBundle;
 
 public class ChangeScene {
 
     public void next_page(ActionEvent event, String x) throws IOException {
 
-        Parent root = FXMLLoader.load(Objects.requireNonNull(HelloApplication.class.getResource(x)));
+        FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource(x)));
+        fxmlLoader.setResources(ResourceBundle.getBundle(ChangeLanguage.getLang()));
+        Parent root = fxmlLoader.load();
+
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(new Scene(root));
         window.setTitle(getTitle(x));
@@ -22,7 +26,10 @@ public class ChangeScene {
     }
 
     public void next_page(Pane root, String x) throws IOException {
-        Parent a = FXMLLoader.load(Objects.requireNonNull(HelloApplication.class.getResource(x)));
+
+        FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource(x)));
+        fxmlLoader.setResources(ResourceBundle.getBundle(ChangeLanguage.getLang()));
+        Parent a = fxmlLoader.load();
         Stage window = (Stage) root.getScene().getWindow();
         window.setScene(new Scene(a));
         window.setTitle(getTitle(x));
@@ -31,7 +38,9 @@ public class ChangeScene {
 
     public void another_page(String x) throws IOException {
         Stage stage = new Stage();
-        Scene scene = new Scene(new FXMLLoader(HelloApplication.class.getResource(x)).load());
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(x));
+        fxmlLoader.setResources(ResourceBundle.getBundle(ChangeLanguage.getLang()));
+        Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle(getTitle(x));
         stage.setScene(scene);
         stage.show();

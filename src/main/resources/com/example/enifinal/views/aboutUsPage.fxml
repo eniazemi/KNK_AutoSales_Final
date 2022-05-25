@@ -67,23 +67,23 @@
         </Menu>
     </MenuBar>
 
-    <Label fx:id="text1" layoutX="33.0" layoutY="20.0" prefHeight="46.0" prefWidth="275.0" text="About Us" textFill="#2b3b5b">
+    <Label fx:id="text1" layoutX="33.0" layoutY="20.0" prefHeight="46.0" prefWidth="275.0" text="%text1" textFill="#2b3b5b">
         <font>
             <Font size="36.0"/>
         </font>
     </Label>
     <Label layoutX="217.0" layoutY="112.0" prefHeight="288.0" prefWidth="451.0" stylesheets="@zdesign.css"
-              text="At Better Ride, we work hard to provide our customers with the very best &#10;vehicles and exceptional service they can rely on. It is important to the team at &#10;Better Ride that our customers leave our dealership with a vehicle that is &#10;perfectly suited to their lifestyle and budget.&#10;&#10;We aim to make sure that every customer is satisfied with the high level of service&#10;they receive throughout the purchase process. Along with stocking a great range &#10;of vehicles, we have a number of services to make your buying experience even&#10;better.&#10;&#10;If you have any questions about our vehicles or services, please contact a member&#10;of our helpful team today."/>
+              text="%label1"/>
     <ImageView fitHeight="183.0" fitWidth="167.0" layoutX="27.0" layoutY="123.0" pickOnBounds="true"
                preserveRatio="true">
         <Image url="@../img/logo_and_stuff/logo.jpg"/>
     </ImageView>
-    <Label layoutX="227.0" layoutY="78.0" text="BETTER RIDE – YOUR LOCAL DEALER MOUNT BARKER" textFill="#2b3b5b">
+    <Label layoutX="227.0" layoutY="78.0" text="%label2" textFill="#2b3b5b">
         <font>
             <Font name="System Bold" size="13.0"/>
         </font>
     </Label>
-    <Label layoutX="83.0" layoutY="357.0" prefHeight="17.0" prefWidth="54.0" text="Contact" textFill="#2b3b5b">
+    <Label layoutX="83.0" layoutY="357.0" prefHeight="17.0" prefWidth="54.0" text="%label3" textFill="#2b3b5b">
         <font>
             <Font name="System Bold" size="12.0"/>
         </font>
@@ -100,15 +100,15 @@
         <Image url="@../img/logo_and_stuff/location.png"/>
     </ImageView>
     <Label layoutX="505.0" layoutY="384.0" prefHeight="75.0" prefWidth="181.0" stylesheets="@zdesign.css"
-              text="Weekdays  | 8:00am – 8:00pm&#10;Saturday | 8:00am – 12:00pm&#10;Sunday | Closed&quot;"/>
-    <Label layoutX="318.0" layoutY="384.0" text="Pirshtine, Kosove"/>
+              text="%label6"/>
+    <Label layoutX="318.0" layoutY="384.0" text="%label3"/>
     <Label layoutX="66.0" layoutY="384.0" text="adhuresa@uni-pr.edu"/>
-    <Label layoutX="325.0" layoutY="358.0" prefHeight="17.0" prefWidth="54.0" text="Location" textFill="#2b3b5b">
+    <Label layoutX="325.0" layoutY="358.0" prefHeight="17.0" prefWidth="54.0" text="%label4" textFill="#2b3b5b">
         <font>
             <Font name="System Bold" size="12.0"/>
         </font>
     </Label>
-    <Label layoutX="530.0" layoutY="358.0" prefHeight="17.0" prefWidth="97.0" text="Working hours" textFill="#2b3b5b">
+    <Label layoutX="530.0" layoutY="358.0" prefHeight="17.0" prefWidth="97.0" text="%label5" textFill="#2b3b5b">
         <font>
             <Font name="System Bold" size="12.0"/>
         </font>

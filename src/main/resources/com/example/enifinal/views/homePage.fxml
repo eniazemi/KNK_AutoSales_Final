@@ -1,22 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>-->
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="966.0" stylesheets="@zdesign.css" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enifinal.controllers.HomePageController">
+    <MenuBar prefWidth="721">
+        <Menu mnemonicParsing="false" text="Main">
+            <MenuItem mnemonicParsing="false" onAction="#gotoHome" text="Home">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Preferences">
+            <MenuItem mnemonicParsing="false" onAction="#gotoAllCars" text="View all cars">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoStatistics" text="Statistics">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Profile">
+            <MenuItem mnemonicParsing="false" onAction="#gotoProfile" text="View profile">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoUserEdit" text="Change password">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoSignOut" text="SignOut">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="ESCAPE" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Settings">
+            <MenuItem mnemonicParsing="false" onAction="#gotoChangeLanguage" text="Change language">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false" onAction="#gotoAboutUs" text="About us">
+                <accelerator>
+                    <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                </accelerator>
+            </MenuItem>
+        </Menu>
+    </MenuBar>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="728.0" prefWidth="966.0" styleClass="bodybg" stylesheets="@zdesign.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enifinal.controllers.HomePageController">
-
-    <Pane prefHeight="101.0" prefWidth="966.0" style="-fx-background-color: #27496D;;">
+    <Pane layoutY="25.0" prefHeight="101.0" prefWidth="966.0" style="-fx-background-color: #27496D;">
         <Label layoutX="32.0" layoutY="22.0" prefHeight="57.0" prefWidth="222.0" text="Better Ride" textFill="WHITE">
             <font>
                 <Font name="Arial Bold Italic" size="36.0" />
@@ -27,56 +70,49 @@
         </ImageView>
     </Pane>
     <ImageView fitHeight="626.0" fitWidth="966.0" layoutY="102.0" opacity="0.39">
-        <Image url="@../img/logo_and_stuff/car33.jpg"/>
+        <Image url="@../img/logo_and_stuff/car33.jpg" />
     </ImageView>
     <GridPane layoutX="152.0" layoutY="295.0" prefHeight="150.0" prefWidth="709.0">
         <columnConstraints>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
-            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints/>
-            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
-        <Button id="icons" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoProfile" prefHeight="90.0"
-                prefWidth="150.0" stylesheets="@zdesign.css" text="%Button1" textFill="WHITE" GridPane.rowIndex="1">
+        <Button id="icons" contentDisplay="TOP" mnemonicParsing="false" onAction="#gotoProfile" prefHeight="90.0" prefWidth="150.0" stylesheets="@zdesign.css" text="%Button1" textFill="WHITE" GridPane.rowIndex="1">
            <GridPane.margin>
-               <Insets right="10.0"/>
+               <Insets right="10.0" />
            </GridPane.margin>
            <font>
-               <Font size="18.0"/>
+               <Font size="18.0" />
            </font>
         </Button>
-        <Button id="icons" mnemonicParsing="false" onAction="#gotoStats" prefHeight="90.0" prefWidth="150.0"
-                stylesheets="@zdesign.css" text="%Button2" textFill="WHITE" GridPane.columnIndex="2"
-                GridPane.rowIndex="1">
+        <Button id="icons" mnemonicParsing="false" onAction="#gotoStats" prefHeight="90.0" prefWidth="150.0" stylesheets="@zdesign.css" text="%Button2" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
            <GridPane.margin>
-               <Insets right="10.0"/>
+               <Insets right="10.0" />
            </GridPane.margin>
            <font>
-               <Font size="18.0"/>
+               <Font size="18.0" />
            </font>
         </Button>
-        <Button id="icons" mnemonicParsing="false" onAction="#gotoAboutUs" prefHeight="90.0" prefWidth="150.0"
-                stylesheets="@zdesign.css" text="%Button3" textFill="WHITE" GridPane.columnIndex="3"
-                GridPane.rowIndex="1">
+        <Button id="icons" mnemonicParsing="false" onAction="#gotoAboutUs" prefHeight="90.0" prefWidth="150.0" stylesheets="@zdesign.css" text="%Button3" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
            <GridPane.margin>
-               <Insets right="10.0"/>
+               <Insets right="10.0" />
            </GridPane.margin>
            <font>
-               <Font size="18.0"/>
+               <Font size="18.0" />
            </font>
         </Button>
-        <Button id="icons" mnemonicParsing="false" onAction="#gotoAllCars" prefHeight="90.0" prefWidth="150.0"
-                stylesheets="@zdesign.css" text="%Button4" textFill="WHITE" GridPane.columnIndex="1"
-                GridPane.rowIndex="1">
+        <Button id="icons" mnemonicParsing="false" onAction="#gotoAllCars" prefHeight="90.0" prefWidth="150.0" stylesheets="@zdesign.css" text="%Button4" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
            <GridPane.margin>
-               <Insets right="10.0"/>
+               <Insets right="10.0" />
            </GridPane.margin>
            <font>
-               <Font size="18.0"/>
+               <Font size="18.0" />
            </font>
         </Button>
     </GridPane>
