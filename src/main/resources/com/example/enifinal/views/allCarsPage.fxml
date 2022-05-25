@@ -19,48 +19,48 @@
         <Menu mnemonicParsing="false" text="%menu1">
             <MenuItem mnemonicParsing="false" onAction="#gotoHome" text="%menu1.1">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
         </Menu>
         <Menu mnemonicParsing="false" text="%menu2">
             <MenuItem mnemonicParsing="false" onAction="#gotoAllCars" text="%menu2.1">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#gotoStatistics" text="%menu2.2">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
         </Menu>
         <Menu mnemonicParsing="false" text="%menu3">
             <MenuItem mnemonicParsing="false" onAction="#gotoProfile" text="%menu3.1">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#gotoUserEdit" text="%menu3.2">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#gotoSignOut" text="%menu3.3">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="ESCAPE" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="ESCAPE" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
         </Menu>
         <Menu mnemonicParsing="false" text="%menu4">
             <MenuItem mnemonicParsing="false" onAction="#gotoChangeLanguage" text="%menu4.1">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
             <MenuItem mnemonicParsing="false" onAction="#gotoAboutUs" text="%menu4.2">
                 <accelerator>
-                    <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                    <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP"/>
                 </accelerator>
             </MenuItem>
         </Menu>

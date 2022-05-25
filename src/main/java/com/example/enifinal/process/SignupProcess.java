@@ -12,7 +12,6 @@ public class SignupProcess {
 
     public String add_user(String name, String surname, String username, String city, String email, String password, String gender, LocalDate birthday, boolean isAdmin) throws SQLException, ClassNotFoundException {
 
-
         try {
             Statement statement = new DBConnect().getConnection().createStatement();
             String query = "INSERT INTO users(FirstName,LastName,Username,City,Email,Pasword,Gender,Birthday,isAdmin) Values ('"

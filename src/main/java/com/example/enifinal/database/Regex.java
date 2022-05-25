@@ -12,11 +12,12 @@ public class Regex {
 
         Matcher matcher = pattern.matcher(email);
 
-    if (!matcher.matches()) {
+        if (!matcher.matches()) {
             return "Invalid email!(e.g user@domain.com)";
         }
         return null;
     }
+
     public String check_user_password(String password) {
         String passwordregex = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,20}$";
 

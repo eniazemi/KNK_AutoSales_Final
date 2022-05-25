@@ -13,13 +13,16 @@ import java.util.ResourceBundle;
 
 public class ChangeScene {
 
-    public void next_page(ActionEvent event, String x){
+    public void next_page(ActionEvent event, String x) {
 
         FXMLLoader fxmlLoader = new FXMLLoader(Objects.requireNonNull(HelloApplication.class.getResource(x)));
         fxmlLoader.setResources(ResourceBundle.getBundle(ChangeLanguage.getLang()));
         Parent root = null;
-        try {root = fxmlLoader.load();
-        }catch (Exception ignore){};
+        try {
+            root = fxmlLoader.load();
+        } catch (Exception ignore) {
+        }
+        ;
         Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
         window.setScene(new Scene(root));
         window.setTitle(getTitle(x));

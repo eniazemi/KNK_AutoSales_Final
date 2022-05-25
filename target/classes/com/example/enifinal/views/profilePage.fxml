@@ -72,7 +72,6 @@
         <Label id="custom-button" layoutX="80.0" layoutY="200.0" stylesheets="@zdesign.css" text="%Email" textFill="#27496d" />
         <Label id="custom-button" layoutX="80.0" layoutY="230.0" stylesheets="@zdesign.css" text="%Gender" textFill="#27496d" />
         <Label id="custom-button" layoutX="80.0" layoutY="260.0" stylesheets="@zdesign.css" text="%Birthday" textFill="#27496d" />
-<!--        <Label layoutX="80.0" layoutY="290.0" text="Admin Privileges"/>-->
 
         <Label fx:id="user_name" layoutX="215.0" layoutY="80.0" />
         <Label fx:id="user_lastname" layoutX="215.0" layoutY="110.0" />
@@ -81,7 +80,6 @@
         <Label fx:id="user_email" layoutX="215.0" layoutY="200.0" />
         <Label fx:id="user_gender" layoutX="215.0" layoutY="230.0" />
         <Label fx:id="user_birthday" layoutX="215.0" layoutY="260.0" />
-<!--        <Label fx:id="user_isAdmin" layoutX="215.0" layoutY="290.0"/>-->
 
         <ImageView fitHeight="211.0" fitWidth="191.0" layoutX="405.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
             <Image url="@../img/logo_and_stuff/person.png" />
