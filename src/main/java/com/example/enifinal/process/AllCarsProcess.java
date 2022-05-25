@@ -29,11 +29,6 @@ public class AllCarsProcess extends Pane {
             this.car_price = resultSet.getInt("car_price");
             this.car_id = resultSet.getInt("car_id");
 
-            System.out.println(this.car_brand);
-            System.out.println(this.car_model);
-            System.out.println(this.car_price);
-            System.out.println(this.car_id);
-
             HBox oneBox = create();
             oneBox.setSpacing(40);
             carlistbox.getChildren().add(oneBox);
@@ -45,7 +40,7 @@ public class AllCarsProcess extends Pane {
 
     public HBox create() throws MalformedURLException {
 
-        String image_path = "src/main/resources/com/example/enifinal/img/cars/";
+        String image_path = "src/main/resources/com/example/enifinal/img/cars/car_";
         Path image_full_path = Paths.get(image_path + car_photo);
         HBox hb = new HBox();
         ImageView imgView = new ImageView();
