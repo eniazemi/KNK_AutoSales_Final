@@ -6,25 +6,29 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0" prefWidth="383.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enifinal.controllers.DeleteUserController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="242.0"
+            prefWidth="383.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enifinal.controllers.DeleteUserController">
 
-    <Label layoutX="14.0" layoutY="22.0" prefWidth="461.0" text="This action will delete permanently user." textFill="#e02a15">
-      <font>
-         <Font size="18.0" />
-      </font>
+    <Label layoutX="14.0" layoutY="22.0" prefWidth="461.0" text="This action will delete permanently user."
+           textFill="#e02a15">
+        <font>
+            <Font size="18.0"/>
+        </font>
     </Label>
     <Label layoutX="14.0" layoutY="40.0" prefWidth="461.0" text="Please be careful!" textFill="#e02a15">
         <font>
-            <Font size="18.0" />
+            <Font size="18.0"/>
         </font>
     </Label>
 
 
-  <Label fx:id="alert" layoutX="40.0" layoutY="70.0" textFill="crimson" />
+    <Label fx:id="alert" layoutX="40.0" layoutY="70.0" textFill="crimson"/>
 
-   <Label layoutX="40.0" layoutY="113.0" text="Delete user with id :" />
-   <TextField fx:id="delete_user" layoutX="207.0" layoutY="109.0" />
-   <Button layoutX="220.0" layoutY="180" mnemonicParsing="false" onAction="#confirm_delete" text="Confirm" />
-    <Button layoutX="130.0" layoutY="180.0" mnemonicParsing="false" onAction="#cancel" stylesheets="@zdesign.css" text="Cancel" />
+    <Label layoutX="40.0" layoutY="113.0" text="Delete user with id :"/>
+    <TextField fx:id="delete_user" layoutX="207.0" layoutY="109.0"/>
+    <Button layoutX="220.0" layoutY="180" mnemonicParsing="false" onAction="#confirm_delete" text="Confirm"/>
+    <Button layoutX="130.0" layoutY="180.0" mnemonicParsing="false" onAction="#cancel" stylesheets="@zdesign.css"
+            text="Cancel"/>
 
 </AnchorPane>
