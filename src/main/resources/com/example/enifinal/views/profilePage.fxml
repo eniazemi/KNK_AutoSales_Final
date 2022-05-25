@@ -13,50 +13,50 @@
 <?import javafx.scene.text.Font?>
 
 <VBox fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.enifinal.controllers.ProfileController">
-    <MenuBar>
-        <Menu mnemonicParsing="false" text="Main">
-            <MenuItem mnemonicParsing="false" onAction="#gotoHome" text="Home">
+    <MenuBar prefHeight="25.0" prefWidth="809.0">
+        <Menu mnemonicParsing="false" text="%menu1">
+            <MenuItem mnemonicParsing="false" onAction="#gotoHome" text="%menu1.1">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
         </Menu>
-        <Menu mnemonicParsing="false" text="Preferences">
-            <MenuItem mnemonicParsing="false" onAction="#gotoAllCars" text="View all cars">
+        <Menu mnemonicParsing="false" text="%menu2">
+            <MenuItem mnemonicParsing="false" onAction="#gotoAllCars" text="%menu2.1">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" onAction="#gotoStatistics" text="Statistics">
+            <MenuItem mnemonicParsing="false" onAction="#gotoStatistics" text="%menu2.2">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
         </Menu>
-        <Menu mnemonicParsing="false" text="Profile">
-            <MenuItem mnemonicParsing="false" onAction="#gotoProfile" text="View profile">
+        <Menu mnemonicParsing="false" text="%menu3">
+            <MenuItem mnemonicParsing="false" onAction="#gotoProfile" text="%menu3.1">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="T" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" onAction="#gotoUserEdit" text="Change password">
+            <MenuItem mnemonicParsing="false" onAction="#gotoUserEdit" text="%menu3.2">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" onAction="#gotoSignOut" text="SignOut">
+            <MenuItem mnemonicParsing="false" onAction="#gotoSignOut" text="%menu3.3">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="ESCAPE" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
         </Menu>
-        <Menu mnemonicParsing="false" text="Settings">
-            <MenuItem mnemonicParsing="false" onAction="#gotoChangeLanguage" text="Change language">
+        <Menu mnemonicParsing="false" text="%menu4">
+            <MenuItem mnemonicParsing="false" onAction="#gotoChangeLanguage" text="%menu4.1">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="H" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
             </MenuItem>
-            <MenuItem mnemonicParsing="false" onAction="#gotoAboutUs" text="About us">
+            <MenuItem mnemonicParsing="false" onAction="#gotoAboutUs" text="%menu4.2">
                 <accelerator>
                     <KeyCodeCombination alt="UP" code="P" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                 </accelerator>
@@ -65,13 +65,13 @@
     </MenuBar>
 
     <AnchorPane VBox.vgrow="ALWAYS">
-        <Label id="custom-button" layoutX="80.0" layoutY="80.0" stylesheets="@zdesign.css" text="Name" textFill="#27496d" />
-        <Label id="custom-button" layoutX="80.0" layoutY="110.0" stylesheets="@zdesign.css" text="Last Name" textFill="#27496d" />
-        <Label id="custom-button" layoutX="80.0" layoutY="140.0" stylesheets="@zdesign.css" text="Username" textFill="#27496d" />
-        <Label id="custom-button" layoutX="80.0" layoutY="170.0" stylesheets="@zdesign.css" text="City" textFill="#27496d" />
-        <Label id="custom-button" layoutX="80.0" layoutY="200.0" stylesheets="@zdesign.css" text="Email" textFill="#27496d" />
-        <Label id="custom-button" layoutX="80.0" layoutY="230.0" stylesheets="@zdesign.css" text="Gender" textFill="#27496d" />
-        <Label id="custom-button" layoutX="80.0" layoutY="260.0" stylesheets="@zdesign.css" text="Birthday" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="80.0" stylesheets="@zdesign.css" text="%name" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="110.0" stylesheets="@zdesign.css" text="%lastName" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="140.0" stylesheets="@zdesign.css" text="%UserName" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="170.0" stylesheets="@zdesign.css" text="%City" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="200.0" stylesheets="@zdesign.css" text="%Email" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="230.0" stylesheets="@zdesign.css" text="%Gender" textFill="#27496d" />
+        <Label id="custom-button" layoutX="80.0" layoutY="260.0" stylesheets="@zdesign.css" text="%Birthday" textFill="#27496d" />
 <!--        <Label layoutX="80.0" layoutY="290.0" text="Admin Privileges"/>-->
 
         <Label fx:id="user_name" layoutX="215.0" layoutY="80.0" />
@@ -87,11 +87,11 @@
             <Image url="@../img/logo_and_stuff/person.png" />
         </ImageView>
 
-        <Label layoutX="205.0" layoutY="14.0" stylesheets="@zdesign.css" text="Welcome to you profile" textFill="#27496d">
+        <Label layoutX="205.0" layoutY="14.0" stylesheets="@zdesign.css" text="%WelcomeTxt" textFill="#27496d">
             <font>
                 <Font name="System Bold" size="18.0" />
             </font>
         </Label>
-        <Button id="Button" layoutX="249.0" layoutY="308.0" mnemonicParsing="false" onAction="#adminAccess" prefHeight="39.0" prefWidth="123.0" style="-fx-cursor: hand;" stylesheets="@zdesign.css" text="Admin Panel" textFill="WHITE" />
+        <Button id="Button" layoutX="249.0" layoutY="308.0" mnemonicParsing="false" onAction="#adminAccess" prefHeight="39.0" prefWidth="123.0" style="-fx-cursor: hand;" stylesheets="@zdesign.css" text="%buttonAdmin" textFill="WHITE" />
     </AnchorPane>
 </VBox>
