@@ -19,7 +19,8 @@ public class Encrypt {
             }
             return sb.toString();
 
-        } catch (NoSuchAlgorithmException ignore) {}
+        } catch (NoSuchAlgorithmException ignore) {
+        }
 
         return null;
     }

@@ -1,5 +1,6 @@
 package com.example.enifinal.controllers;
 
+import com.example.enifinal.database.Encrypt;
 import com.example.enifinal.database.Regex;
 import com.example.enifinal.models.UserModel;
 import com.example.enifinal.process.ChangePasswordProcess;
@@ -29,7 +30,7 @@ public class ChangePasswordController extends MenuController implements Initiali
     @FXML
     public void change_password(ActionEvent event) throws SQLException, ClassNotFoundException, IOException {
         String alert_msg = null;
-        if (!Objects.equals(old_password.getText(), UserModel.getPass())) {
+        if (!Objects.equals(new Encrypt().encryptionWithMD5(old_password.getText()), UserModel.getPass())) {
             alert.setText("Old Password is incorrect");
             return;
         }

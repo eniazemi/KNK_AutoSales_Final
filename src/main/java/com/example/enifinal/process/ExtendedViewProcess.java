@@ -2,6 +2,7 @@ package com.example.enifinal.process;
 
 import com.example.enifinal.database.Queries;
 import com.example.enifinal.models.CarModel;
+
 import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,7 +15,8 @@ public class ExtendedViewProcess {
         setCarModel();
         try {
             new ChangeScene().another_page("views/extendedInfo.fxml");
-        }catch (Exception ignore){}
+        } catch (Exception ignore) {
+        }
     }
 
     public void setCarModel() throws SQLException, ClassNotFoundException {

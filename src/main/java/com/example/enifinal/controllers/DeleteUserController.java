@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 import java.io.IOException;
-import java.sql.SQLException;
+
 
 public class DeleteUserController {
 
@@ -16,7 +16,7 @@ public class DeleteUserController {
 
     public Label alert;
 
-    public void confirm_delete(ActionEvent event){
+    public void confirm_delete(ActionEvent event) {
         String delete_user_id = delete_user.getText();
         try {
             DeleteUserProcess dup = new DeleteUserProcess((Integer.parseInt(delete_user_id)));
@@ -29,7 +29,7 @@ public class DeleteUserController {
                     InformationAlert.setContentText("User DELETED Successfully");
                     dup.deleteUser();
                     InformationAlert.show();
-                    new ChangeScene().next_page(event,"views/profilePage.fxml");
+                    new ChangeScene().next_page(event, "views/profilePage.fxml");
 
                 } else {
                     Alert error = new Alert(Alert.AlertType.ERROR);

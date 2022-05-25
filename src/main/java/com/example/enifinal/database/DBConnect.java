@@ -1,6 +1,5 @@
 package com.example.enifinal.database;
 
-
 import java.sql.*;
 
 public class DBConnect {

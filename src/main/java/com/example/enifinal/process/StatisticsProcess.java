@@ -10,7 +10,7 @@ import java.sql.SQLException;
 
 public class StatisticsProcess {
 
-    public XYChart.Series getDataSeriesBarChart(String tableName ,String groupby) throws SQLException, ClassNotFoundException {
+    public XYChart.Series getDataSeriesBarChart(String tableName, String groupby) throws SQLException, ClassNotFoundException {
 
         ResultSet db_data = new Queries().count_values(tableName, groupby);
 
@@ -25,7 +25,7 @@ public class StatisticsProcess {
 
     public ObservableList<PieChart.Data> getDataPieChart(String tableName, String groupby) throws SQLException, ClassNotFoundException {
 
-        ResultSet db_data = new Queries().count_values(tableName,groupby);
+        ResultSet db_data = new Queries().count_values(tableName, groupby);
 
         ObservableList<PieChart.Data> pieChartData = FXCollections.observableArrayList();
         while (db_data.next()) {
@@ -36,7 +36,6 @@ public class StatisticsProcess {
         }
         return pieChartData;
     }
-
 
 
 }

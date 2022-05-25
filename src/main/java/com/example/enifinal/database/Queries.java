@@ -13,7 +13,7 @@ public class Queries {
         DBConnect dbc = new DBConnect();
         statement = dbc.getConnection().createStatement();
 
-        String query = "select * from "+tableName;
+        String query = "select * from " + tableName;
 
         return statement.executeQuery(query);
     }
@@ -22,7 +22,7 @@ public class Queries {
         DBConnect dbc = new DBConnect();
         statement = dbc.getConnection().createStatement();
 
-        String query = "select * from "+tableName+" where "+conditionColumn+" = "+id;
+        String query = "select * from " + tableName + " where " + conditionColumn + " = " + id;
 
         return statement.executeQuery(query);
     }
@@ -32,7 +32,7 @@ public class Queries {
         DBConnect dbc = new DBConnect();
         statement = dbc.getConnection().createStatement();
 
-        String query = "UPDATE "+ tableName+" SET "+columnUpdateName+" = '"+columnUpdateValue+"' WHERE "+columnConitionName + " = " +columnConitionValue;
+        String query = "UPDATE " + tableName + " SET " + columnUpdateName + " = '" + columnUpdateValue + "' WHERE " + columnConitionName + " = " + columnConitionValue;
 
         statement.executeUpdate(query);
     }
@@ -42,17 +42,18 @@ public class Queries {
         DBConnect dbc = new DBConnect();
         statement = dbc.getConnection().createStatement();
 
-        String query = "DELETE FROM "+ tableName+" WHERE "+columnCondition+" = "+id;
+        String query = "DELETE FROM " + tableName + " WHERE " + columnCondition + " = " + id;
         statement.executeUpdate(query);
 
     }
 
-    public ResultSet count_values(String table_name,String column_count) throws SQLException, ClassNotFoundException {
+    public ResultSet count_values(String table_name, String column_count) throws SQLException, ClassNotFoundException {
         DBConnect dbc = new DBConnect();
         statement = dbc.getConnection().createStatement();
         String query = "select " + column_count + ", count(*) as num_count from " + table_name + " group by " + column_count;
 
         return statement.executeQuery(query);
     }
+
 
 }

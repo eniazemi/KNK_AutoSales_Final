@@ -5,11 +5,9 @@ import com.example.enifinal.process.ChangeScene;
 import com.example.enifinal.database.Regex;
 import com.example.enifinal.process.SignupProcess;
 import javafx.event.ActionEvent;
-
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -75,5 +73,4 @@ public class SignupController implements Initializable {
     private void cancel_button(ActionEvent event) throws IOException {
         new ChangeScene().next_page(event, "views/loginPage.fxml");
     }
-
 }

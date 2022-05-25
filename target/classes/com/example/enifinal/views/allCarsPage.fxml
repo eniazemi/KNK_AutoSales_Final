@@ -10,6 +10,7 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.input.KeyCodeCombination?>
 
+
 <VBox fx:id="root" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.example.enifinal.controllers.AllCarsController" maxHeight="-Infinity"
       maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
@@ -66,17 +67,14 @@
     </MenuBar>
 
     <ScrollPane>
-        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="600.0">
-            <HBox prefHeight="111.0" prefWidth="600.0">
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="805.0">
+            <HBox prefHeight="111.0" prefWidth="805.0">
                 <AnchorPane prefHeight="111.0" prefWidth="662.0">
                     <Label layoutX="258.0" layoutY="47.0" prefHeight="24.0" prefWidth="88.0" text="WELCOME"/>
                 </AnchorPane>
             </HBox>
-            <HBox prefHeight="290.0" prefWidth="600.0">
-                <VBox fx:id="car_list" prefHeight="300.0" prefWidth="500.0"/>
-                <VBox prefHeight="290.0" prefWidth="323.0">
-                    <AnchorPane fx:id="filters" prefHeight="251.0" prefWidth="323.0"/>
-                </VBox>
+            <HBox prefHeight="290.0" prefWidth="805.0">
+                <VBox fx:id="car_list" prefHeight="600.0" prefWidth="800.0"/>
             </HBox>
         </VBox>
     </ScrollPane>

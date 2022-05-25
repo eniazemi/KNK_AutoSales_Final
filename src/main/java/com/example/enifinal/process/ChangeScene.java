@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 import java.util.Objects;
 
@@ -37,7 +38,7 @@ public class ChangeScene {
     }
 
 
-    private String getTitle(String x){
+    private String getTitle(String x) {
         return switch (x) {
             case "views/greetingPage.fxml" -> "Welcome";
             case "views/profilePage.fxml" -> "My profile";

@@ -3,9 +3,7 @@ package com.example.enifinal.controllers;
 import com.example.enifinal.process.AllCarsProcess;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
-
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -13,8 +11,6 @@ import java.util.ResourceBundle;
 public class AllCarsController extends MenuController implements Initializable {
     @FXML
     private VBox car_list;
-    @FXML
-    private AnchorPane filters;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {

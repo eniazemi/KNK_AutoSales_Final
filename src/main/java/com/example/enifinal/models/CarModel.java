@@ -82,13 +82,7 @@ public class CarModel {
         CarModel.car_top_speed = car_top_speed;
     }
 
-    public static int getCar_id() {
-        return car_id;
-    }
 
-    public static void setCar_id(int car_id) {
-        CarModel.car_id = car_id;
-    }
 
 
 }

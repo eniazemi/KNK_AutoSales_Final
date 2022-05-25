@@ -7,10 +7,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
-
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
 
 public class ProfileController extends MenuController implements Initializable {
     @FXML
@@ -37,6 +37,4 @@ public class ProfileController extends MenuController implements Initializable {
         user_email.setText(UserModel.getEmail());
         user_city.setText(UserModel.getCity());
     }
-
-
 }

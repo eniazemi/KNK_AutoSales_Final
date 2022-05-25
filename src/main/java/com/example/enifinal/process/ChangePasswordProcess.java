@@ -8,8 +8,6 @@ import java.sql.SQLException;
 
 public class ChangePasswordProcess {
     public ChangePasswordProcess(String new_pw) throws SQLException, ClassNotFoundException {
-        System.out.println("ss");
         new Queries().updateOne("users", "Pasword", new Encrypt().encryptionWithMD5(new_pw), "id", UserModel.getId());
-        System.out.println("updated");
     }
 }

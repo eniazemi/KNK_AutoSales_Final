@@ -31,7 +31,7 @@ public class LoginController {
         else {
             String user = username.getText();
             String pass = password.getText();
-//            pass = new Encrypt().encryptionWithMD5(pass);
+            pass = new Encrypt().encryptionWithMD5(pass);
             LoginProcess lv = new LoginProcess();
 
             if (lv.validate(user, pass, "users")) {
