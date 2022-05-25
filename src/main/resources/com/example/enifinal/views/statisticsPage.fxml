@@ -62,13 +62,13 @@
     </MenuBar>
 
 
-    <Label layoutX="400.0" layoutY="45.0" text="Some statistics about our cars">
+    <Label layoutX="400.0" layoutY="45.0" text="%Statistics_Text">
         <font>
             <Font size="32.0"/>
         </font>
     </Label>
     <BarChart fx:id="barChartC" layoutX="50.0" layoutY="100.0" prefHeight="300.0" prefWidth="400.0"
-              title="Fuel of our cars" barGap="10" categoryGap="1">
+              title="%Statistics_Text1" barGap="10" categoryGap="1">
         <xAxis>
             <CategoryAxis side="BOTTOM" label="Fuel"/>
         </xAxis>
@@ -77,17 +77,17 @@
         </yAxis>
     </BarChart>
     <PieChart fx:id="pieChartC" layoutX="700.0" layoutY="100.0" prefHeight="300.0" prefWidth="400.0"
-              title="Year of release" legendVisible="false"/>
+              title="%Statistics_Text2" legendVisible="false"/>
 
-    <Label layoutX="400.0" layoutY="445.0" text="Some statistics about our users">
+    <Label layoutX="400.0" layoutY="445.0" text="%Statistics_Text3">
         <font>
             <Font size="32.0"/>
         </font>
     </Label>
     <PieChart fx:id="pieChartU" layoutX="50.0" layoutY="500.0" prefHeight="300.0" prefWidth="400.0"
-              title="Gender of our users"/>
+              title="%Statistics_Text4"/>
     <BarChart fx:id="barChartU" layoutX="700.0" layoutY="500.0" prefHeight="300.0" prefWidth="400.0"
-              title="City of our users" barGap="10" categoryGap="1">
+              title="%Statistics_Text5" barGap="10" categoryGap="1">
         <xAxis>
             <CategoryAxis side="BOTTOM" label="City"/>
         </xAxis>
